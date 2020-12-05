@@ -18,13 +18,12 @@ namespace ConsoleApp1
         static void Main(string[] args)
         {
             Time mytime = new Time { Seconds = 103 };
-            //int x = mytime;
-            //Time mytime1 = (Time)x;
+            int x = mytime;
+            Time mytime1 = (Time)x;
             Timer timer1 = mytime;
             Time mytime2 = timer1;
             Console.WriteLine($"{timer1.Hours}:{timer1.Minuts}:{timer1.Seconds}");
             Console.WriteLine(mytime2.Seconds);
-
             Console.ReadKey();
         }
         class Time
